@@ -1,0 +1,212 @@
+/*resets*/
+
+.lighter {
+  font-weight: lighter;
+}
+#bootstrap-overrides img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+/*intro section*/
+
+#bootstrap-overrides #logo {
+  width: 5%;
+}
+#intro-image {
+  display: none;
+}
+#intro-text {
+  animation: none;
+  padding: 3em;
+}
+#intro-text p {
+  color: #ffffff;
+  line-height: 48px;
+  padding-top: 0.5em;
+  letter-spacing: 0px;
+  font-size: 48px;
+}
+#bootstrap-overrides .navbar-toggle {
+  margin-right: 40px;
+}
+
+/*search*/
+
+.custom-search-input{
+  padding: 3px;
+  border: solid 1px #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.custom-search-input .search-input{
+  border: 0;
+  box-shadow: none;
+}
+
+.custom-search-input button{
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #666666;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
+}
+
+.custom-search-input button:hover{
+  border: 0;
+  box-shadow: none;
+  border-left: solid 1px #ccc;
+}
+
+.custom-search-input .glyphicon-search{
+  font-size: 20px;
+}
+
+#search-block h2 {
+  color: #666666;
+  font-size: 20px;
+}
+
+#search-block {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#input-field {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#output {
+  margin: 3em;
+  font-size: 16px;
+  color: #666666;
+  text-align: left;
+  padding: 0 1em;
+}
+#input-field form {
+  margin-bottom: 0;
+}
+
+/*login form*/
+
+#demo input:not(.unstyled) {
+  font-size: 14px;
+  height: 36px;
+}
+#loginForm {
+  margin: 5%;
+}
+#loginForm .control-label {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+}
+#inputEmail3, #inputPassword3 {
+  margin-left: 3%;
+}
+#remember-me {
+  color: #666666;
+}
+
+#loginForm button {
+  color: #666666;
+}
+
+/*admin page*/
+
+.admin-section {
+  height: auto;
+  padding-top: 100px;
+  text-align: center;
+  background: #ffffff;
+  padding-bottom: 50px;
+}
+#logout {
+  text-align: center;
+  padding-top: 10px
+}
+#logout a {
+  text-decoration: none;
+  color: #666666;
+}
+
+/*other elements*/
+
+#submit-button {
+  background-color: transparent;
+}
+.white-btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/*animations*/
+
+@keyframes fadeInDownBig {
+  1% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+
+@keyframes fadeInLeftBig {
+  1% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+/*media queries*/
+
+@media(min-width:992px) {
+  #intro-text {
+    margin-top: 10%;
+    padding-left: 9.5em;
+    animation: 2s fadeInDownBig;
+  }
+  #intro-text p {
+    color: #ffffff;
+    line-height: 48px;
+    padding-top: 0.5em;
+    letter-spacing: 0px;
+    font-size: 48px;
+  }
+  #intro-image {
+    display: inline-block;
+    margin-bottom: 5em;
+    animation: 2s fadeInLeftBig;
+  }
+}

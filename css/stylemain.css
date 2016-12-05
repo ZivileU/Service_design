@@ -1,0 +1,420 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+ .navbar.top-nav-collapse {
+        padding: 0;
+        background: #fff;
+    }
+}
+.navbar-default{
+  border: 0px;
+  background: #fff;
+  /* Old browsers */
+ /* background: -moz-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* FF3.6+ */
+  /*background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #22B17E), color-stop(100%, #006865));
+  /* Chrome,Safari4+ */
+  /*background: -webkit-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* Chrome10+,Safari5.1+ */
+ /* background: -o-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* Opera 11.10+ */
+  /*background: -ms-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* IE10+ */
+  /*background: linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* W3C */
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#22B17E, endColorstr=#006865, GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+}
+
+/*ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}*/
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    text-decoration: underline;
+    color: #006865;
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    text-decoration: underline;
+    background-color: transparent;
+    color: #006865;
+}
+
+
+.navbar-default .navbar-nav>li>a{
+    color:#006865;
+}
+
+.navbar-default .navbar-brand{
+    color: #006865;
+}
+.navbar.top-nav-collapse .navbar-brand{
+    color: #006865;
+}
+
+.navbar.top-nav-collapse .navbar-nav>li>a{
+    color:#006865;
+}
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+
+.scrollpoint.active {
+  opacity: 1 \0;
+}
+
+.intro-section {
+    height: auto;
+    padding-top: 150px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+    background: #22B17E;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #22B17E), color-stop(100%, #006865));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* IE10+ */
+  background: linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#22B17E, endColorstr=#006865, GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+#introtitle{
+    color: #5d5d5d;
+    padding-top: 20px;
+}
+
+.intro-section a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color:#5d5d5d;
+
+}
+.intro-section a:hover {
+    opacity: .5;
+}
+
+#intro a {
+    padding-top: 60px;
+}
+#intro a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: -12px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+
+.intro-section-xs {
+
+    padding-top: 50px;
+    text-align: center;
+    background: #eafafa;
+    padding-bottom: 50px;
+
+}
+
+hr {
+    height: 2px;
+    background-color:#006865;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+
+.intro-box {
+    position:absolute;
+    width:100%;
+    height: 35%;
+    margin-top: 150px;
+    left: 0;
+   /* padding: 50%;*/
+    /*padding: 20%;*/
+    background-color:rgba(234, 250, 250, 0.8);
+}
+.about-section {
+    height: auto;
+    padding-top: 40px;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 50px;
+}
+
+.about-section .fa
+{
+    color: #006865;
+    border: 2px solid #006865;
+    width: 94px;
+    padding: 30px;
+    display: inline-block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+}
+.about-item:hover i.fa{
+    color: #ffffff;
+    background: #006865;
+}
+/*animation for About section*/
+@-webkit-keyframes fadeInUp {
+  1% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  1% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animated{
+        animation-duration: 1.3s;
+        animation-fill-mode: both;
+}
+hr {
+    width: 4%;
+    background-color: #507672;
+    margin-bottom: 70px;
+}
+/*=====Features section=====*/
+.features-section {
+    height: auto;
+    padding-top: 40px;
+    text-align: center;
+    background: #EFF0F1;
+    padding-bottom: 50px;
+}
+.features-section .col-xs-12 .right-column{
+
+}
+.features-section .features-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features-hr{
+    margin-bottom: 30px;
+}
+#features .img-responsive{
+    width: 220px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+.features-section .fa
+{
+    color: #006865;
+    border: 2px solid #006865;
+    width: 2.6em;
+    padding: 20px;
+    display: inline-block;
+    margin-left:20px;
+    margin-right: 20px;
+    text-align: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+}
+.media:hover i.fa{
+    color: #ffffff;
+    background: #006865;
+}
+.features-section .left-column{
+    margin-top: 30px;
+}
+.features-section .media{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.features-section .right-column{
+    margin-top: 30px;
+}
+
+.features-section .media-body{
+    padding-top: 20px;
+}
+.screens-section {
+   /* height: 100%;*/
+    padding-top: 40px;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 50px;
+}
+/*====== Screens Carousel Slick slider====*/
+
+ .slider {
+    width: 100%;
+     margin: 40px 0 0:
+}
+
+. slider .sl_slide{
+    margin: 0 7px;
+}
+
+.sl_slide .sl_img{
+    width:220px;
+    margin: auto;
+
+}
+.slick-prev:before, .slick-next:before{
+    text-align: center;
+    color: #777;
+    font-size: 30px;
+}
+
+/*====== Screens Carousel End====*/
+
+.video-section {
+    height: auto;
+    padding-top: 40px;
+    text-align: center;
+    background: #EFF0F1;
+    padding-bottom: 50px;
+}
+.demo-section {
+    height: auto;
+    padding-top: 40px;
+    text-align: center;
+    background: #fff;
+    padding-bottom: 10px;
+}
+/*.demo-heading{
+    margin-top: 5em;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+   background-size: 30%;
+    z-index: 1;
+}
+*/
+.nav-tabs > li:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity:0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #ddd;
+    transition:0.1s ease-in-out;
+
+}
+.nav-tabs > li.active:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #ddd;
+    transition: 1s ease-in-out;
+}
+
+.nav-tabs > li a{
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.nav-tabs > li a:hover{
+    background: transparent;
+}
+
+
+p{ text-align: left;}
+li{text-align: left;}
+h1{ color: #666666;}
+h3{color: #666666;}
+
+.intro {text-align: center;}
+
+.contact-section {
+    color: #fff;
+    padding-top: 50px;
+    text-align: center;
+    background: linear-gradient(-45deg, #22B17E 0%, #006865 100%);
+    padding-bottom: 50px;
+}
+.contact-section h1 {
+  color: #ffffff;
+  margin-bottom: 2em;
+}
+.contact-section p {
+    text-align: center;
+    margin-top: 2em;
+}
+
